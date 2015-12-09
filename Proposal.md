@@ -54,18 +54,21 @@ NOTE : We have to distinguish between a browser incoming and an API incoming. Fo
 
 Predefined variables
 ====================
+```
 {here} - the current page url
 {endpoint} - the fhir endpoint of the resource on the current page
 {callback:<name>} - a call back url for an incoming connector
+```
 
 Example connectors
 ==================
-# Externally edit an instance of the StructureDefinition on the page.
+
+#### Externally edit an instance of the StructureDefinition on the page.
 ```
 BROWSER.GET http://clinfhir.com/editpatient?structure={endpoint}&instance=http://fhir.org/
 ```
 
-# Fetch a resource from one server and post it to a another server
+#### Fetch a resource from one server and post it to a another server
 ```
 FHIR.READ http://spark.furore.com/fhir/Patient/example >> #patient
 FHIR.CREATE http://fhirtest.uhn.ca/baseDstu2/Patient [#patient]
