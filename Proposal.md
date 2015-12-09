@@ -9,9 +9,9 @@ We define the following:
 
 Notice that each connector must have a unique name.
 
-Server commands
-==============
-We have two types of commands: internal server operations and commands for the client / browser
+Server reachout commands
+========================
+We have two types of commands: internal server operations and commands for the client / browser. These are the server commands:
 ```
 SERVER.GET <url> [#<identifier>]  - store the body in a new variable 
 SERVER.POST <url> [#<identifier>] - posts a variable in the body of a post command
@@ -29,6 +29,7 @@ FHIR.CREATE // a SERVER.POST with FHIR headers
 
 Browser/Client commands
 =======================
+An OUTGOING command 
 After the command link has been clicked and the internal commands have been processed, the connector allows a redirect get or post.
 ```
 BROWSER.GET <url> // 
@@ -48,6 +49,8 @@ receives a url with one parameter that is stored in the #callback variable and a
 ```
 INCOMING POST ReceivePatient ? #callback [#patient] 
 ```
+
+NOTE : We have to distinguish between a browser incoming and an API incoming. For now we wont allow underwater API calls
 
 Predefined variables
 ====================
