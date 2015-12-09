@@ -20,9 +20,9 @@ Fhir Commands
 =============
 Based on https://www.hl7.org/fhir/http.html
 ```
-FHIR.READ - a SERVER.GET with FHIR headers etc.
-FHIR.UPDATE - a SERVER.PUT with FHIR headers
-FHIR.CREATE - a SERVER.POST with FHIR headers
+FHIR.READ // a SERVER.GET with FHIR headers etc.
+FHIR.UPDATE // a SERVER.PUT with FHIR headers
+FHIR.CREATE // a SERVER.POST with FHIR headers
 ```
 
 
