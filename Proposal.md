@@ -10,15 +10,15 @@ We define the following:
 Basic commands
 ==============
 We have two types of commands: internal server operations and commands for the client / browser
-SERVER.GET <url> >> #<identifier>
-SERVER.POST <url> [#<identifier>] 
-SERVER.PUT <url> [#<identifier>]
+- SERVER.GET <url> >> #<identifier>
+- SERVER.POST <url> [#<identifier>] 
+- SERVER.PUT <url> [#<identifier>]
 
 Fhir Commands
 =============
 Based on https://www.hl7.org/fhir/http.html
-FHIR.READ - a SERVER.GET with FHIR headers etc.
-FHIR.UPDATE - a SERVER.PUT with FHIR headers
-FHIR.CREATE - a SERVER.POST with FHIR headers
+- FHIR.READ - a SERVER.GET with FHIR headers etc.
+- FHIR.UPDATE - a SERVER.PUT with FHIR headers
+- FHIR.CREATE - a SERVER.POST with FHIR headers
 
 
