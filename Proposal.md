@@ -1,4 +1,4 @@
-This is a very simple language to define Simplifier connectors. Currently this is just a proposal. It might never need a parser. It is just an easy way to exploreand design the necessary features to implement a connector system that allows everyone to build Connectors.
+This is a very simple pseudo scripting language to define Simplifier connectors. Currently this is just a proposal. It might never need a parser. It is just an easy way to exploreand design the necessary features to implement a connector system that allows everyone to build Connectors.
 
 We define the following:
 - commands like `SERVER.READ`, `BROWSER.GET`. 
@@ -71,11 +71,10 @@ BROWSER.GET http://clinfhir.com/editpatient?structure={endpoint}&instance=http:/
 
 #### Fetch a resource from one server and post it to a another server
 ```
-FHIR.READ http://spark.furore.com/fhir/Patient/example >> #patient
+FHIR.READ http://spark.furore.com/fhir/Patient/example [#patient]
 FHIR.CREATE http://fhirtest.uhn.ca/baseDstu2/Patient [#patient]
 
-INCOMING ? #callback [#patient]
-
+```
 
 
 
