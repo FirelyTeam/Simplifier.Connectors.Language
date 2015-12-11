@@ -34,6 +34,7 @@ After the command link has been clicked and the internal commands have been proc
 ```
 BROWSER.GET <url> // 
 BROWSER.POST <url> [#<identifier>]
+BROWSER.PUT <url> [#<identifier>]
 ```
 
 Incoming connector
